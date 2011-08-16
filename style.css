@@ -127,9 +127,9 @@ a:hover {
     line-height: 0px;
 }
 
-.image_block {
+.leftContent img {
 	padding : 20px;
 }
-.image_block img { 
+.leftContent img { 
 	width: 360px;
 }
