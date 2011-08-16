@@ -63,7 +63,7 @@ a:hover {
 	font-size:24px;
 	text-decoration:none;
 }
-.menu #active a {
+.menu .current-menu-item a {
 	color:#ff9c00;
 	font-size:24px;
 	text-decoration:none;
@@ -73,9 +73,23 @@ a:hover {
 	margin:0 auto;
 	padding:130px 0 0 0;
 }
-.leftContent p, .rightContent p {
-	padding:40px;
+
+.Content h1, .leftContent h1, .rightContent h1 {
+	padding: 40px 30px 5px 30px;
 }
+.Content h2, .leftContent h2, .rightContent h2 {
+	padding: 40px 35px 5px 35px;
+}
+.Content p, .leftContent p, .rightContent p, .rightContent div.block {
+	padding: 5px 40px 5px 40px; 
+}
+
+.Content {
+	float: left;
+	width: 100%;
+	background:url(images/Content.png) repeat-y left top;
+}
+
 .leftContent {
 	float:left;
 	width:400px;
@@ -104,4 +118,11 @@ a:hover {
     height:0;
     font-size: 1px;
     line-height: 0px;
+}
+
+.image_block {
+	padding : 20px;
+}
+.image_block img { 
+	width: 360px;
 }
