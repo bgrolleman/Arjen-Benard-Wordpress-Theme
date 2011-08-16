@@ -32,7 +32,7 @@
 			global $post;
 			$images = get_children( 
 				array(
-					'post_parent' => $post_id,
+					'post_parent' => $post->ID,
 					'post_status' => 'inherit', 
 					'post_type' => 'attachment',
 					'post_mime_type' => 'image',
@@ -47,13 +47,14 @@
 			$limit = '0',
 			$offset = '0',
 			$big = 'large',
-			$post_id = '$post->ID',
+			$post_id = 0,
 			$link = '1',
 			$img_class = 'attachment-image',
 			$wrapper = 'div',
 			$wrapper_class = 'attachment-image-wrapper'
 		) {
 			global $post;
+			$post_id = $post->ID;
 			$images = get_children( 
 				array(
 					'post_parent' => $post_id,
