@@ -132,5 +132,12 @@ a:hover {
 	padding : 20px;
 }
 .leftContent img { 
-	width: 360px;
+	width: 100px;
+	float: left;
+	padding: 15px;
+}
+
+.Content ul {
+	margin:0;
+	padding: 0px 60px 10px 60px;
 }

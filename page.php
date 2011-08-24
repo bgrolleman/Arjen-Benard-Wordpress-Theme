@@ -3,7 +3,7 @@
 	<?php if ( wpo_have_images() ) { ?>
 		<div class="leftContent">
 			<?php
-				wpo_get_images( $size = 'large' );
+				wpo_get_images( $size = 'thumbnail' );
 			?>
 		</div>
 		<div class="rightContent">

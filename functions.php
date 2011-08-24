@@ -107,7 +107,7 @@
 						<<?=$wrapper; ?> class="<?=$wrapper_class; ?>">
 					<?php endif; ?>
 					<?php if ($link == '1') : ?>
-						<a href="<?php echo $img_url; ?>" title="<?php echo $img_title; ?>">
+						<a href="<?php echo $img_url; ?>" title="<?php echo $img_title; ?>" rel="lightbox[54]">
 					<?php endif; ?>
 					<img class="<?php echo $img_class; ?>" src="<?php echo $img_preview; ?>" alt="<?php echo $img_alt; ?>" title="<?php echo $img_title; ?>" />
 					<?php if ($link == '1') : ?>
