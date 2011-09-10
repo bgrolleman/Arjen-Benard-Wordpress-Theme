@@ -34,7 +34,7 @@ a:hover {
 }
 .logo {
 	color:#69ca1a;
-	font-size:55px;
+	font-size:50px;
 	padding:10px 0 0 30px;
 	line-height: 90%;
 	font-weight: bold;
@@ -50,7 +50,7 @@ a:hover {
 	background:url(images/menuBackground.png) repeat-x left top;
 	height:103px;
 	text-align:center;
-	margin-top:65px;
+	margin-top:15px;
 }
 .menu ul {
 	margin:0;
@@ -132,5 +132,12 @@ a:hover {
 	padding : 20px;
 }
 .leftContent img { 
-	width: 360px;
+	width: 100px;
+	float: left;
+	padding: 15px;
+}
+
+.Content ul {
+	margin:0;
+	padding: 0px 60px 10px 60px;
 }
