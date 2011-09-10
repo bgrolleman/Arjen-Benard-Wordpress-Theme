@@ -26,18 +26,35 @@
 		<?php }
 	}
 
+	function wpo_have_images (
+			$post_id = '$post->ID'
+		) { 
+			global $post;
+			$images = get_children( 
+				array(
+					'post_parent' => $post->ID,
+					'post_status' => 'inherit', 
+					'post_type' => 'attachment',
+					'post_mime_type' => 'image',
+					'order' => 'ASC',
+					'orderby' => 'menu_order ID'
+				) 
+			);
+			return $images;
+	}
 	function wpo_get_images(
 			$size = 'thumbnail',
 			$limit = '0',
 			$offset = '0',
 			$big = 'large',
-			$post_id = '$post->ID',
+			$post_id = 0,
 			$link = '1',
 			$img_class = 'attachment-image',
 			$wrapper = 'div',
 			$wrapper_class = 'attachment-image-wrapper'
 		) {
 			global $post;
+			$post_id = $post->ID;
 			$images = get_children( 
 				array(
 					'post_parent' => $post_id,
@@ -85,7 +102,8 @@
 					///////////////////////////////////////////////////////////
 					// This is where you'd create your custom image/link/whatever tag using the variables above.
 					// This is an example of a basic image tag using this method.
-					if ( $wrapper != 0 ) : ?>
+				  // ?>
+					<?php if ($wrapper != '0' ) : ?>
 						<<?=$wrapper; ?> class="<?=$wrapper_class; ?>">
 					<?php endif; ?>
 					<?php if ($link == '1') : ?>

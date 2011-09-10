@@ -1,2 +1,19 @@
 Still need to add some details for this
 
+style.css - Stylesheet
+functions.php - Few used functions and settings
+
+
+index.php - Default / Blog Posts
+	header.php 
+	theloop.php 
+	sidebar.php 
+	footer.php 
+
+page.php - Single Page
+	header.php
+	theloop.php
+	footer.php
+
+Please note that page.php checks if images are available for the post, and switches to a dual column view if this is the case.
+

@@ -16,11 +16,11 @@ body  {
 	color: #ffffff;
 }
 a {
-	color:#ff9c00;
+	color:#69ca1a;
 	text-decoration:underline;
 }
 a:hover {
-	color:#ff9c00;
+	color:#69ca1a;
 	text-decoration:none;
 }
 #container { 
@@ -30,13 +30,14 @@ a:hover {
 	width:100%; 
 }
 .logoBackground {
-	background:#000000;
 	width:300px;
 }
 .logo {
-	color:#ff9c00;
-	font-size:60px;
+	color:#69ca1a;
+	font-size:55px;
 	padding:10px 0 0 30px;
+	line-height: 90%;
+	font-weight: bold;
 }
 .author {
 	padding:0 0 10px 30px;
@@ -49,7 +50,7 @@ a:hover {
 	background:url(images/menuBackground.png) repeat-x left top;
 	height:103px;
 	text-align:center;
-	margin-top:265px;
+	margin-top:65px;
 }
 .menu ul {
 	margin:0;
@@ -66,12 +67,12 @@ a:hover {
 	text-decoration:none;
 }
 .menu li a:hover {
-	color:#ff9c00;
+	color:#69ca1a;
 	font-size:24px;
 	text-decoration:none;
 }
 .menu .current-menu-item a {
-	color:#ff9c00;
+	color:#69ca1a;
 	font-size:24px;
 	text-decoration:none;
 }
@@ -127,9 +128,9 @@ a:hover {
     line-height: 0px;
 }
 
-.image_block {
+.leftContent img {
 	padding : 20px;
 }
-.image_block img { 
+.leftContent img { 
 	width: 360px;
 }
