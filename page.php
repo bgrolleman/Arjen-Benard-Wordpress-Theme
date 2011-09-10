@@ -3,7 +3,7 @@
 	<?php if ( get_post_meta($post->ID, 'photo1', true)) { ?>
 		<div class="leftContent">
 			<?php
-				wpo_get_images( $size = 'thumbnail' );
+				wpo_get_images( $size = 'medium' );
 				custom_photo($post, "photo1");	
 				custom_photo($post, "photo2");	
 				custom_photo($post, "photo3");	
